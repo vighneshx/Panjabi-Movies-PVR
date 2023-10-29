@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panjabi Movies - PVR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar with navigation to Home, Collection, and Order -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Panjabi Movies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <!-- Showcasing the movies -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- ordering movies -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="order.php">Order</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section with background image and call-to-action -->
+    <section class="hero jumbotron">
+        <div class="container text-center">
+            <h1 class="display-4">Discover the Best Panjabi Films</h1>
+            <p class="lead">Stream and Buy Your Favorite Movies</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+        </div>
+    </section>
+
+    <!-- Film collection section -->
+    <section class="film-collection container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="film1.avif" class="card-img-top" alt="Film Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Maurh</h5>
+                        <p class="card-text">Set against the backdrop of the untamed sandy badlands of Punjab between 1885 and 1893, Maurh unveils a tale of resilience, honor, and defiance against the oppressive dual rule of British colonizers and native kings. Jeona Maurh and his brother Kishna Maurh emerge as beacons of hope, challenging this unjust system and fighting for their rights, witness the unforgettable story of them with their unique dreams, aspirations, and struggles.</p>
+                        <!-- Link on the main page to order.php with movie details as query parameters -->
+                        <a href="order.php?film_id=1&film_title=Maurh&film_description=Set against the backdrop of the untamed sandy badlands of Punjab between 1885 and 1893, Maurh unveils a tale of resilience, honor, and defiance against the oppressive dual rule of British colonizers and native kings. Jeona Maurh and his brother Kishna Maurh emerge as beacons of hope, challenging this unjust system and fighting for their rights, witness the unforgettable story of them with their unique dreams, aspirations, and struggles">
+                            Bestel Maurh
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="film2.avif" class="card-img-top" alt="Film Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Mastaney</h5>
+                        <p class="card-text">Set in 1739, Nadar Shah's undefeated army was attacked by Sikh Rebellions. Nadar demands to arrest them but it doesn't work out. Five ordinary men are hired to play Sikh Rebellions but over time they learn what Sikhs are.</p>
+                        <a href="order.php?film_id=2&film_title=Mastaney&film_description=Set in 1739, Nadar Shah's undefeated army was attacked by Sikh Rebellions. Nadar demands to arrest them but it doesn't work out. Five ordinary men are hired to play Sikh Rebellions but over time they learn what Sikhs are">
+                            Bestel Mastaney
+                        </a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="film3.jpeg" class="card-img-top" alt="Film Thumbnail">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajre Da Sitta</h5>
+                        <p class="card-text">A young woman is blessed with a beautiful voice but is restrained to sing due to the society where she lives in. Even her new husband warns her that if she tries to sing again, he will drop her back at her parent's house.</p>
+                        <a href="order.php?film_id=3&film_title=Bajre%20Da%20Sitta&film_description=A%20young%20woman%20is%20blessed%20with%20a%20beautiful%20voice%20but%20is%20restrained%20to%20sing%20due%20to%20the%20society%20where%20she%20lives%20in.%20Even%20her%20new%20husband%20warns%20her%20that%20if%20she%20tries%20to%20sing%20again,%20he%20will%20drop%20her%20back%20at%20her%20parent's%20house">
+                            Bestel Bajre Da Sitta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Film-details-section (can be filled in) -->
+    <section class="film-details container">
+        <!-- Details of the selected film can be added here -->
+    </section>
+
+    <!-- About-us-section (can be filled in) -->
+    <section class="about-us container">
+        <!-- Information about the company can be added here -->
+    </section>
+
+    <!-- Contact-form-section (can be filled in) -->
+    <section class="contact-form container">
+        <!-- A contact form for users can be added here -->
+    </section>
+
+    <!-- Footer-section with the name of the creator -->
+    <footer class="text-center">
+        <p>This website is made by Vighnesh Lachman (089521)</p>
+    </footer>
+
+    <!-- Modals for orders (can be filled in) -->
+    <div class="modal fade" id="orderModal1" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <!-- An order modal for film 1 can be added here -->
+    </div>
+    <div class="modal fade" id="orderModal2" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <!-- An order modal for film 2 can be added here -->
+    </div>
+    <div class="modal fade" id="orderModal3" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <!-- An order modal for film 3 can be added here -->
+    </div>
+
+    <!-- JavaScript and GSAP scripts for animations (can be filled in) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="/scripts/app.js"></script>
+
+</body>
+</html>

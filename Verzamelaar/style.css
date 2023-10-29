@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the font-family to 'Space Grotesk' for the entire page */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #1a1a1a; /* Background color */
+}
+
+/* Navbar Styles */
+.navbar {
+    background: url("https://images.unsplash.com/photo-1608447714925-599deeb5a682?auto=format&fit=crop&q=80&w=2944&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    border-bottom: 2px solid #771224;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.navbar-brand {
+    font-size: 36px;
+    color: #771224;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #771224;
+}
+
+.navbar-toggler-icon {
+    background-color: #771224;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.navbar-toggler-icon:hover {
+    background-color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 15px 20px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #771224;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav-link:hover {
+    color: #61dafb;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link.active::before {
+    width: 100%;
+}
+
+/* Responsive Navigation Dropdown Styles */
+.navbar-collapse {
+    justify-content: flex-end;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-item::after {
+    content: "";
+    border-right: 1px solid #771224;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.nav-item:last-child::after {
+    border: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=2940&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #771224, #a80c0c); /* Gradient button */
+    border: none;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: background 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #a80c0c, #771224);
+}
+
+/* Film Card Styles with 3D Effect */
+.card {
+    background: #fff;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-size: 24px;
+    color: #6c757d;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Additional Styles */
+/* Add your custom styles below this line */
